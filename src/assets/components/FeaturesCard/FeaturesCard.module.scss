@@ -1,0 +1,29 @@
+.card {
+  padding: 70px 42px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 39px;
+  letter-spacing: 0.22px;
+}
+
+.content {
+  margin-bottom: 70px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.36px;
+}
