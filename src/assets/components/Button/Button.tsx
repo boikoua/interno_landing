@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './BigButton.module.scss';
+import styles from './Button.module.scss';
 
 type Prop = {
   text: string;
@@ -7,7 +7,7 @@ type Prop = {
   className: string;
 };
 
-const BigButton: React.FC<Prop> = ({ text, icon, className }) => {
+const Button: React.FC<Prop> = ({ text, icon, className }) => {
   return (
     <button className={`${styles.btn} ${className}`}>
       <span>{text}</span> <img src={icon} alt="Icon" />
@@ -15,4 +15,4 @@ const BigButton: React.FC<Prop> = ({ text, icon, className }) => {
   );
 };
 
-export default BigButton;
+export default Button;

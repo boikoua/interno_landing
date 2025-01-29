@@ -1,0 +1,72 @@
+@import './../../styles/variables';
+
+.about {
+  margin-bottom: 140px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 530px;
+}
+
+.title {
+  font-size: 50px;
+  line-height: 65px;
+  letter-spacing: 0.22px;
+}
+
+.text {
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+
+.call {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 50%;
+  background-color: $second-bg-color;
+}
+
+.tel {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+
+.number {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.btn {
+  background-color: $second-brand-color;
+  border-color: $second-brand-color;
+}
+
+.img {
+  width: 590px;
+  height: 635px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0px 326px 0px 123px;
+}

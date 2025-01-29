@@ -1,4 +1,4 @@
-import BigButton from '../BigButton';
+import Button from '../Button';
 import Title from '../Title';
 import styles from './Started.module.scss';
 import arrowIcon from './../../img/icon/arrow-gold.svg';
@@ -22,11 +22,7 @@ const Started = () => {
             into greater opportunities.
           </p>
 
-          <BigButton
-            text="Get Started"
-            className={styles.btn}
-            icon={arrowIcon}
-          />
+          <Button text="Get Started" className={styles.btn} icon={arrowIcon} />
         </div>
       </div>
     </section>
