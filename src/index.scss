@@ -17,6 +17,11 @@ h1,
 h2,
 h3 {
   font-family: 'DM Serif Display', serif;
+  color: $second-brand-color;
+}
+
+p {
+  color: $text-color;
 }
 
 ul {
@@ -27,8 +32,13 @@ a {
   text-decoration: none;
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1200px;
   margin-inline: auto;
-  border: 2px solid gray;
+  // border: 2px solid gray;
 }

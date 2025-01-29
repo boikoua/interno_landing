@@ -1,10 +1,12 @@
+@import './../../styles/variables';
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding-block: 38px;
-  border: 2px solid blue;
+  padding-block: 28px;
+  background-color: $main-bg-color;
 }
 
 .wrapper {
