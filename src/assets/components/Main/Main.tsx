@@ -1,6 +1,7 @@
 import AboutUs from '../AboutUs';
 import Brands from '../Brands';
 import Features from '../Features';
+import Projects from '../Projects';
 import Reviews from '../Reviews';
 import Started from '../Started';
 import styles from './Main.module.scss';
@@ -13,6 +14,7 @@ const Main = () => {
       <AboutUs />
       <Reviews />
       <Brands />
+      <Projects />
     </main>
   );
 };

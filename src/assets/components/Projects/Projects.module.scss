@@ -1,0 +1,23 @@
+.top {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 62.4px;
+  letter-spacing: 0.22px;
+}
+
+.text {
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 20px;
+}
