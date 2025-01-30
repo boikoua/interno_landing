@@ -1,0 +1,61 @@
+@import './../../styles/variables';
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 320px 1fr 1fr 320px;
+  gap: 80px;
+  margin-bottom: 60px;
+}
+
+.text {
+  margin-bottom: 20px;
+  color: $text-color;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.link > img {
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 37.5px;
+  letter-spacing: 0.22px;
+}
+
+.links {
+  & > li {
+    margin-bottom: 20px;
+
+    & > a {
+      color: $text-color;
+      font-size: 22px;
+      line-height: 33px;
+      letter-spacing: 0.22px;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $main-brand-color;
+      }
+    }
+  }
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: $second-bg-color;
+}

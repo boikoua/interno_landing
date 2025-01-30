@@ -1,0 +1,26 @@
+.author {
+  margin-bottom: 20px;
+  padding-top: 20px;
+
+  & > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    margin-inline: auto;
+    transition: all 0.3s;
+
+    & > img {
+      width: 32px;
+    }
+
+    & > span {
+      font-size: 20px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
