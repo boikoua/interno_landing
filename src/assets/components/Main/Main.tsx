@@ -1,4 +1,5 @@
 import AboutUs from '../AboutUs';
+import Brands from '../Brands';
 import Features from '../Features';
 import Reviews from '../Reviews';
 import Started from '../Started';
@@ -11,6 +12,7 @@ const Main = () => {
       <Features />
       <AboutUs />
       <Reviews />
+      <Brands />
     </main>
   );
 };
