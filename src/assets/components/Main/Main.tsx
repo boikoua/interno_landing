@@ -1,6 +1,7 @@
 import AboutUs from '../AboutUs';
 import Blogs from '../Blogs';
 import Brands from '../Brands';
+import ContactUs from '../ContactUs';
 import Features from '../Features';
 import Projects from '../Projects';
 import Reviews from '../Reviews';
@@ -19,6 +20,7 @@ const Main = () => {
       <Projects />
       <Statistic />
       <Blogs />
+      <ContactUs />
     </main>
   );
 };
