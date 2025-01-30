@@ -4,6 +4,7 @@ import Features from '../Features';
 import Projects from '../Projects';
 import Reviews from '../Reviews';
 import Started from '../Started';
+import Statistic from '../Statistic';
 import styles from './Main.module.scss';
 
 const Main = () => {
@@ -15,6 +16,7 @@ const Main = () => {
       <Reviews />
       <Brands />
       <Projects />
+      <Statistic />
     </main>
   );
 };
