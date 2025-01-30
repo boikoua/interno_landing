@@ -1,0 +1,23 @@
+@import './../../styles/variables';
+
+.reviews {
+  padding: 100px 50px 120px;
+  border-radius: 70px;
+  background-color: $second-bg-color;
+}
+
+.title {
+  max-width: 500px;
+  margin-inline: auto;
+  margin-bottom: 50px;
+  font-size: 46px;
+  line-height: 58.5px;
+  letter-spacing: 0.22px;
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}

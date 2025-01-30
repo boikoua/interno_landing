@@ -1,5 +1,6 @@
 import AboutUs from '../AboutUs';
 import Features from '../Features';
+import Reviews from '../Reviews';
 import Started from '../Started';
 import styles from './Main.module.scss';
 
@@ -9,6 +10,7 @@ const Main = () => {
       <Started />
       <Features />
       <AboutUs />
+      <Reviews />
     </main>
   );
 };
