@@ -1,0 +1,58 @@
+import { IBlog } from '../types/IBlog';
+
+export const blogsData: IBlog[] = [
+  {
+    id: 1,
+    img: './img/blogs/1.jpg',
+    title: 'Residential Interior Designer In New York, USA',
+    date: 27,
+    month: 'November',
+    year: 2024,
+    category: 'Kitchen Design',
+  },
+  {
+    id: 2,
+    img: './img/blogs/2.jpg',
+    title: 'How To Choose The Best Wall Art & Decor House?',
+    date: 29,
+    month: 'September',
+    year: 2024,
+    category: 'Living Room',
+  },
+  {
+    id: 3,
+    img: './img/blogs/3.jpg',
+    title: 'Tips To Increase The Interior Value Of Your House',
+    date: 23,
+    month: 'August',
+    year: 2024,
+    category: 'Minimalist Interior',
+  },
+  {
+    id: 4,
+    img: './img/blogs/4.jpg',
+    title: 'Best Solution For Any Office & Business Interior',
+    date: 7,
+    month: 'August',
+    year: 2024,
+    category: 'Kitchen Design',
+  },
+  {
+    id: 5,
+    img: './img/blogs/5.jpg',
+    title: 'Get Solution For Building Construction Work',
+    date: 20,
+    month: 'July',
+    year: 2024,
+    category: 'Living Room',
+  },
+  {
+    id: 6,
+    img: './img/blogs/6.jpg',
+    title: 'Attain The Best Finish For The Kitchen Cabinets',
+    date: 10,
+    month: 'June',
+    year: 2024,
+    category: 'Minimalist Interior',
+  },
+];
