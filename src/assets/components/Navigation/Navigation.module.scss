@@ -1,4 +1,5 @@
 @import './../../styles/variables';
+@import './../../styles/mixins';
 
 .nav {
   & > ul {
@@ -32,5 +33,11 @@
     width: 0;
     background-color: $main-brand-color;
     transition: all 0.3s ease;
+  }
+}
+
+@include tablet {
+  .nav {
+    display: none;
   }
 }

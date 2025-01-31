@@ -1,3 +1,5 @@
+@import './../../styles/mixins';
+
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -9,6 +11,31 @@
 
     &:hover {
       transform: scale(1.05);
+    }
+  }
+}
+
+@include tablet {
+  .wrapper {
+    margin-bottom: 50px;
+    & > img {
+      max-width: 100px;
+    }
+  }
+}
+
+@include mobile {
+  .wrapper {
+    & > img {
+      max-width: 60px;
+    }
+  }
+}
+
+@include small-mobile {
+  .wrapper {
+    & > img {
+      max-width: 50px;
     }
   }
 }

@@ -1,3 +1,11 @@
+@import './../../styles/mixins';
+
 .main {
   margin-top: 116px;
+}
+
+@include tablet {
+  .main {
+    margin-top: 90px;
+  }
 }

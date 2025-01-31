@@ -1,11 +1,13 @@
 @import './../../styles/variables';
+@import './../../styles/mixins';
 
 .header {
   position: fixed;
   z-index: 999;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  width: 100vw;
   padding-block: 28px;
   background-color: $main-bg-color;
 }
@@ -14,4 +16,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@include tablet {
+  .header {
+    padding-block: 20px;
+  }
 }

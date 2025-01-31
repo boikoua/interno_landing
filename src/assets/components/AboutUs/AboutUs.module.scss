@@ -1,4 +1,5 @@
 @import './../../styles/variables';
+@import './../../styles/mixins';
 
 .about {
   margin-bottom: 140px;
@@ -69,4 +70,70 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 0px 326px 0px 123px;
+}
+
+@include tablet {
+  .about {
+    margin-bottom: 100px;
+  }
+
+  .wrapper {
+    gap: 20px;
+  }
+
+  .content {
+    max-width: 330px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  .icon {
+    padding: 20px;
+  }
+
+  .tel {
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  .number {
+    font-size: 20px;
+  }
+
+  .img {
+    width: 100%;
+    border-radius: 0px 226px 0px 123px;
+  }
+}
+
+@include mobile {
+  .about {
+    margin-bottom: 80px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .content {
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .img {
+    width: 100%;
+    border-radius: 0px 123px;
+  }
 }

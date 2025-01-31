@@ -1,7 +1,15 @@
+@import './../../styles/mixins';
+
 .logo {
   transition: all 0.3s ease;
 
   &:hover {
     transform: scale(1.05);
+  }
+}
+
+@include tablet {
+  .logo > img {
+    max-width: 150px;
   }
 }

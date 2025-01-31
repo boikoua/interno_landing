@@ -1,4 +1,5 @@
 @import './../../styles/variables';
+@import './../../styles/mixins';
 
 .reviews {
   margin-bottom: 140px;
@@ -21,4 +22,34 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+@include tablet {
+  .reviews {
+    margin-bottom: 70px;
+    padding: 50px 30px;
+  }
+
+  .title {
+    max-width: 400px;
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include mobile {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@include small-mobile {
+  .title {
+    font-size: 28px;
+  }
 }

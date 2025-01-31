@@ -1,4 +1,5 @@
 @import './../../styles/variables';
+@import './../../styles/mixins';
 
 .card {
   padding: 50px 35px 30px;
@@ -44,4 +45,59 @@
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.22px;
+}
+
+@include desktop {
+  .card {
+    padding: 20px;
+  }
+}
+
+@include tablet {
+  .top {
+    margin-bottom: 20px;
+    min-height: 80px;
+  }
+
+  .photo {
+    width: 68px;
+    height: 68px;
+  }
+
+  .name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .location {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@include small-mobile {
+  .photo {
+    width: 56px;
+    height: 56px;
+  }
+
+  .name {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .location {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

@@ -1,4 +1,5 @@
 @import './../../styles/variables';
+@import './../../styles/mixins';
 
 .img {
   min-height: 660px;
@@ -49,5 +50,16 @@
     & > img {
       right: -6px;
     }
+  }
+}
+
+@include mobile {
+  .img {
+    min-height: 460px;
+  }
+
+  .btn {
+    width: 50px;
+    height: 50px;
   }
 }

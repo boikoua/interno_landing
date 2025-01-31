@@ -1,3 +1,5 @@
+@import './../../styles/mixins';
+
 .projects {
   margin-bottom: 100px;
 }
@@ -26,4 +28,19 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px 20px;
+}
+
+@include tablet {
+  .projects {
+    margin-bottom: 70px;
+  }
+
+  .top {
+    margin-bottom: 50px;
+  }
+
+  .bottom {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
