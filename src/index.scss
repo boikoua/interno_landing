@@ -34,6 +34,11 @@ a {
   color: $text-color;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
 button,
 a {
   cursor: pointer;

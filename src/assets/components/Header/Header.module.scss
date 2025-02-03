@@ -18,8 +18,20 @@
   align-items: center;
 }
 
+.burger {
+  display: none;
+}
+
 @include tablet {
   .header {
     padding-block: 20px;
+  }
+
+  .burger {
+    display: block;
+
+    & > img {
+      width: 50px;
+    }
   }
 }

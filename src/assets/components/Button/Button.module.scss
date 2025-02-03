@@ -11,6 +11,21 @@
   border: 2px solid;
   border-radius: 18px;
   color: $btn-text-color;
+  transition: all 0.3s;
+
+  & > img {
+    position: relative;
+    right: 0;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+
+    & > img {
+      right: -5px;
+    }
+  }
 }
 
 @include tablet {

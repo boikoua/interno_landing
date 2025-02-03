@@ -1,0 +1,61 @@
+@import './../../styles/variables';
+
+.burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $main-bg-color;
+  z-index: 10000;
+  transition: all 0.3s ease-in;
+
+  & > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    gap: 20px;
+  }
+}
+
+.none {
+  left: -5000px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.link {
+  position: relative;
+  color: $second-brand-color;
+  font-size: 32px;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $main-brand-color;
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: $main-brand-color;
+    transition: all 0.3s ease;
+  }
+}
