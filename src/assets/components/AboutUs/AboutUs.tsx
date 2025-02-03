@@ -9,7 +9,7 @@ const AboutUs = () => {
     <section id="about" className={styles.about}>
       <div className="container">
         <div className={styles.wrapper}>
-          <div className={styles.content}>
+          <div className={styles.content} data-aos="fade-right">
             <Title
               tag="h2"
               className={styles.title}
@@ -43,6 +43,7 @@ const AboutUs = () => {
           <div
             className={styles.img}
             style={{ backgroundImage: 'url(./img/about-us-bg.jpg)' }}
+            data-aos="fade-left"
           ></div>
         </div>
       </div>

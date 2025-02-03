@@ -11,7 +11,7 @@ const ReviewsCard: React.FC<Props> = ({ review }) => {
   const { photo, name, city, country, text } = review;
 
   return (
-    <article className={styles.card}>
+    <article className={styles.card} data-aos="zoom-in">
       <div className={styles.top}>
         <img className={styles.photo} src={photo} alt={name} />
 

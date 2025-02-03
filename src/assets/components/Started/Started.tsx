@@ -10,7 +10,7 @@ const Started = () => {
       style={{ backgroundImage: 'url(./img/started-bg.jpg)' }}
     >
       <div className="container">
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} data-aos="fade-right">
           <Title
             tag="h1"
             text="Let's Create Your Dream Interior"

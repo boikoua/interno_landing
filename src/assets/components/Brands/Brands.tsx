@@ -7,7 +7,7 @@ const Brands = () => {
   ));
 
   return (
-    <section className={styles.brands}>
+    <section className={styles.brands} data-aos="fade-right">
       <div className="container">
         <div className={styles.wrapper}>{showBrands}</div>
       </div>

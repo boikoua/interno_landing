@@ -15,7 +15,7 @@ const Footer = () => {
   ));
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} data-aos="fade-up">
       <div className="container">
         <div className={styles.wrapper}>
           <div>

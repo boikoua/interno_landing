@@ -12,7 +12,7 @@ const BlogCard: React.FC<Props> = ({ blog }) => {
   const { title, img, date, month, year, category } = blog;
 
   return (
-    <article className={styles.card}>
+    <article className={styles.card} data-aos="flip-right">
       <div className={styles.img} style={{ backgroundImage: `url(${img})` }}>
         <span className={styles.category}>{category}</span>
       </div>

@@ -11,7 +11,7 @@ const ProjectsCard: React.FC<Props> = ({ project }) => {
   const { img, title, genre } = project;
 
   return (
-    <article className={styles.card}>
+    <article className={styles.card} data-aos="flip-left">
       <div
         className={styles.img}
         style={{ backgroundImage: `url(${img})` }}

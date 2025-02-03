@@ -8,7 +8,7 @@ const Features = () => {
   ));
 
   return (
-    <section className={styles.features}>
+    <section className={styles.features} data-aos="zoom-in">
       <div className="container">
         <div className={styles.wrapper}>{showCards}</div>
       </div>

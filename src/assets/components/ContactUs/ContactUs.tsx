@@ -6,7 +6,7 @@ import arrowIcon from './../../img/icon/arrow-dark.svg';
 const ContactUs = () => {
   return (
     <div className="container">
-      <section id="contact" className={styles.contact}>
+      <section id="contact" className={styles.contact} data-aos="flip-up">
         <Title
           tag="h2"
           className={styles.title}

@@ -11,7 +11,7 @@ const Blogs = () => {
   return (
     <section id="pages" className={styles.blogs}>
       <div className="container">
-        <div className={styles.top}>
+        <div className={styles.top} data-aos="fade-down">
           <Title tag="h2" className={styles.title} text="Recent Blogs" />
 
           <p className={styles.text}>

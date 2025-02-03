@@ -10,7 +10,7 @@ type Props = {
 
 const Header: React.FC<Props> = ({ onClickBurger }) => {
   return (
-    <header className={styles.header}>
+    <header className={styles.header} data-aos="fade-down">
       <div className="container">
         <div className={styles.wrapper}>
           <Logo />

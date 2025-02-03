@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <section id="services" className={styles.projects}>
       <div className="container">
-        <div className={styles.top}>
+        <div className={styles.top} data-aos="fade-down">
           <Title tag="h2" className={styles.title} text="Recent Projects" />
 
           <p className={styles.text}>

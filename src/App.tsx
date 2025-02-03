@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import AOS from 'aos';
 import Footer from './assets/components/Footer';
 import Header from './assets/components/Header';
 import Main from './assets/components/Main';
@@ -10,6 +11,13 @@ const App = () => {
   const handleBurgerOpen = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
     <>
