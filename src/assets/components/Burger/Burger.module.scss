@@ -1,4 +1,5 @@
 @import './../../styles/variables';
+@import './../../styles/mixins';
 
 .burger {
   position: absolute;
@@ -57,5 +58,12 @@
     width: 0;
     background-color: $main-brand-color;
     transition: all 0.3s ease;
+  }
+}
+
+@include mobile {
+  .close {
+    width: 40px;
+    height: 40px;
   }
 }

@@ -4,7 +4,7 @@ import styles from './Navigation.module.scss';
 const Navigation = () => {
   const showCategories = mainCategories.map((item) => (
     <li key={item.id}>
-      <a className={styles.link} href="#">
+      <a className={styles.link} href={`#${item.link}`}>
         {item.category}
       </a>
     </li>

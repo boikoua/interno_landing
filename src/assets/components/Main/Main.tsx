@@ -11,7 +11,7 @@ import styles from './Main.module.scss';
 
 const Main = () => {
   return (
-    <main className={styles.main}>
+    <main id="home" className={styles.main}>
       <Started />
       <Features />
       <AboutUs />

@@ -2,6 +2,7 @@ import { mainCategories } from '../../api/mainCategories';
 import styles from './Burger.module.scss';
 import closeIcon from './../../img/icon/close.svg';
 import cn from 'classnames';
+import { useEffect } from 'react';
 
 type Props = {
   isOpen: boolean;
@@ -9,14 +10,29 @@ type Props = {
 };
 
 const Burger: React.FC<Props> = ({ isOpen, onClick }) => {
-  const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    event.preventDefault();
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, [isOpen]);
+
+  const handleLinkClick = () => {
     onClick();
   };
 
   const showCategories = mainCategories.map((item) => (
     <li key={item.id}>
-      <a className={styles.link} href="#" onClick={handleLinkClick}>
+      <a
+        className={styles.link}
+        href={`#${item.link}`}
+        onClick={handleLinkClick}
+      >
         {item.category}
       </a>
     </li>

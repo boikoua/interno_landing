@@ -10,6 +10,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $main-bg-color;
 }
@@ -48,6 +52,11 @@ a {
   max-width: 1200px;
   width: 100%;
   margin-inline: auto;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }
 
 @include desktop {

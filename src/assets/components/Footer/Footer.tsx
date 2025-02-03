@@ -1,5 +1,6 @@
 import { socialLinks } from '../../api/socialLinks';
 import Author from '../Author';
+import BackButton from '../BackButton';
 import Logo from '../Logo';
 import Title from '../Title';
 import styles from './Footer.module.scss';
@@ -88,6 +89,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <BackButton />
       </div>
       <div className={styles.line}></div>
       <div className="container">

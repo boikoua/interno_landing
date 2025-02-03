@@ -6,7 +6,7 @@ import phoneIcon from './../../img/icon/phone.svg';
 
 const AboutUs = () => {
   return (
-    <section className={styles.about}>
+    <section id="about" className={styles.about}>
       <div className="container">
         <div className={styles.wrapper}>
           <div className={styles.content}>

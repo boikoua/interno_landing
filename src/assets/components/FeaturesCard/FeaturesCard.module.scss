@@ -27,6 +27,11 @@
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.36px;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 @include tablet {

@@ -9,7 +9,7 @@ const Blogs = () => {
   ));
 
   return (
-    <section className={styles.blogs}>
+    <section id="pages" className={styles.blogs}>
       <div className="container">
         <div className={styles.top}>
           <Title tag="h2" className={styles.title} text="Recent Blogs" />

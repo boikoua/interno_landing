@@ -2,12 +2,6 @@
 @import './../../styles/mixins';
 
 .header {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
   padding-block: 28px;
   background-color: $main-bg-color;
 }
@@ -32,6 +26,14 @@
 
     & > img {
       width: 50px;
+    }
+  }
+}
+
+@include mobile {
+  .burger {
+    & > img {
+      width: 40px;
     }
   }
 }

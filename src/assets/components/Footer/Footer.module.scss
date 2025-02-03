@@ -1,6 +1,10 @@
 @import './../../styles/variables';
 @import './../../styles/mixins';
 
+.footer {
+  position: relative;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 320px 1fr 1fr 320px;

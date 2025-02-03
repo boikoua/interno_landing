@@ -5,6 +5,11 @@
   padding: 50px 35px 30px;
   background-color: $review-bg-color;
   border-radius: 30px;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 5px 5px 20px $box-shadow-color;
+  }
 }
 
 .top {
