@@ -36,6 +36,13 @@
   background-color: $main-brand-color;
 }
 
+@include tablet {
+  .title {
+    text-align: center;
+    font-size: 44px;
+  }
+}
+
 @include mobile {
   .contact {
     text-align: center;

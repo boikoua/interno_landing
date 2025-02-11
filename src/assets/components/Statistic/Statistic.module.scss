@@ -36,27 +36,6 @@
 }
 
 @include tablet {
-  .statistic {
-    margin-bottom: 70px;
-    padding-block: 70px;
-  }
-
-  .num {
-    font-size: 66px;
-    line-height: 80px;
-  }
-
-  .text {
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  .divider {
-    height: 120px;
-  }
-}
-
-@include mobile {
   .wrapper {
     flex-wrap: wrap;
 
@@ -71,15 +50,25 @@
   }
 
   .num {
-    font-size: 36px;
+    font-size: 42px;
     line-height: 60px;
   }
 
   .text {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .divider {
     display: none;
+  }
+}
+
+@include mobile {
+  .num {
+    font-size: 36px;
+  }
+
+  .text {
+    font-size: 14px;
   }
 }

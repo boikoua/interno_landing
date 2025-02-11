@@ -24,6 +24,12 @@
   gap: 20px;
 }
 
+@include desktop {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @include tablet {
   .reviews {
     margin-bottom: 70px;
@@ -37,12 +43,6 @@
     line-height: 48px;
   }
 
-  .wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@include mobile {
   .wrapper {
     grid-template-columns: 1fr;
   }

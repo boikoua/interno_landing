@@ -65,7 +65,7 @@
   background-color: $second-bg-color;
 }
 
-@include desktop {
+@media (max-width: 1200px) {
   .wrapper {
     gap: 40px;
     margin-bottom: 30px;
@@ -75,11 +75,24 @@
     font-size: 20px;
     line-height: 28px;
   }
+}
+
+@include desktop {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
 
   .title {
     margin-bottom: 16px;
     font-size: 22px;
     line-height: 30px;
+  }
+
+  .socials {
+    justify-content: center;
   }
 
   .links {
@@ -96,7 +109,7 @@
 
 @include tablet {
   .wrapper {
-    grid-template-columns: 320px 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 

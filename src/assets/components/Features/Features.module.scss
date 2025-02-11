@@ -1,4 +1,5 @@
 @import './../../styles/mixins';
+@import './../../styles/variables';
 
 .features {
   padding-block: 100px;
@@ -12,6 +13,18 @@
 @include tablet {
   .features {
     padding-block: 70px;
+  }
+}
+
+@media (min-width: $tablet-size) and (max-width: $desktop-size) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include tablet {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

@@ -30,6 +30,12 @@
   gap: 40px 20px;
 }
 
+@include desktop {
+  .bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @include tablet {
   .blogs {
     margin-bottom: 70px;
@@ -40,13 +46,8 @@
   }
 
   .bottom {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-}
-
-@include mobile {
-  .bottom {
     grid-template-columns: 1fr;
+    gap: 20px;
+    padding-inline: 0;
   }
 }

@@ -43,7 +43,7 @@ const AboutUs = () => {
           <div
             className={styles.img}
             style={{ backgroundImage: 'url(./img/about-us-bg.jpg)' }}
-            data-aos="fade-left"
+            data-aos="fade-up"
           ></div>
         </div>
       </div>

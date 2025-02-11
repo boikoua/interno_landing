@@ -3,7 +3,7 @@ import styles from './Statistic.module.scss';
 
 const Statistic = () => {
   return (
-    <section className={styles.statistic} data-aos="fade-left">
+    <section className={styles.statistic} data-aos="fade-up">
       <div className="container">
         <div className={styles.wrapper}>
           <article>

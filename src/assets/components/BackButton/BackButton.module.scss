@@ -19,9 +19,11 @@
   }
 }
 
-@include mobile {
+@include tablet {
   .arrow {
     bottom: 60px;
     right: 20px;
+    width: 40px;
+    height: 40px;
   }
 }

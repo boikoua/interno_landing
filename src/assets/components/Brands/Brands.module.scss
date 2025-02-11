@@ -17,10 +17,20 @@
 
 @include tablet {
   .wrapper {
+    gap: 20px;
+    width: 100%;
     margin-bottom: 50px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
     & > img {
       max-width: 100px;
     }
+  }
+
+  .wrapper::-webkit-scrollbar {
+    display: none;
   }
 }
 
